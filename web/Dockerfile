@@ -1,2 +1,3 @@
 FROM node:18.16.0-alpine
-ENTRYPOINT ["node", "--version"]
+WORKDIR /code
+ENTRYPOINT ["npm", "start"]
