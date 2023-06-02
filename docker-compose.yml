@@ -5,3 +5,9 @@ services:
       - 3000:3000
     volumes:
       - ./web:/code
+  backend:
+    build: backend/.
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/code
